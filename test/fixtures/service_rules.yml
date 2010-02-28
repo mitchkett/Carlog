@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  service_job_type: MyString
+  time_frequency: 
+  mileage_frequency: 
+
+two:
+  service_job_type: MyString
+  time_frequency: 
+  mileage_frequency: 

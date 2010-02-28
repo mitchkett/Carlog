@@ -1,0 +1,36 @@
+<% header do -%>
+<h1><%= @service_provider.name %></h1>
+<% end %>
+<p>
+  <b>Address:</b>
+  <%=h @service_provider.address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @service_provider.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%=h @service_provider.state %>
+</p>
+
+<p>
+  <b>Postal code:</b>
+  <%=h @service_provider.postal_code %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @service_provider.phone %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%=h @service_provider.website %>
+</p>
+
+
+<%= link_to 'Edit', edit_service_provider_path(@service_provider) %> |
+<%= link_to 'Back', service_providers_path %>

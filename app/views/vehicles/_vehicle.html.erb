@@ -1,0 +1,27 @@
+<% form_for(vehicle) do |f| %>
+  <%= f.error_messages %>
+  
+  <div class="year_make_model_selector clearfix" data-makes_url="<%= makes_path %>" data-models_url="<%= models_path %>">
+    <div class='field year'>
+      <%= f.select :year, @vehicle.possible_years, :prompt => 'Year' %>
+    </div>
+    <div class='field make'>
+      <%= f.select :make_id, [], :prompt => 'Make' %>
+    </div>
+    <div class='field model'>
+      <%= f.select :model_id, [], :prompt => 'Model' %>
+    </div>
+  </div>
+  <div class='field current_mileage'>
+    <%= f.label :current_mileage %>
+    <%= f.text_field :current_mileage %>
+  </div>
+  <div class='field average_mileage'>
+    <%= f.label :average_mileage %>
+    <%= f.text_field :average_mileage %>
+  </div>
+  <div class='field submit'>
+    <%= f.submit button_label %>
+  </div>
+  
+<% end %>

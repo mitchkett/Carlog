@@ -1,0 +1,16 @@
+<% form_for(  vehicle) do |f| %>
+  <%= f.error_messages %>
+  
+  <div class='field current_mileage'>
+    <%= f.label :current_mileage %>
+    <%= f.text_field :current_mileage %>
+  </div>
+  <div class='field average_mileage'>
+    <%= f.label :average_mileage %>
+    <%= f.text_field :average_mileage %>
+  </div>
+  <div class='field submit'>
+    <%= f.submit button_label %>
+  </div>
+  
+<% end %>

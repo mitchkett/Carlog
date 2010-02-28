@@ -1,0 +1,6 @@
+
+
+Processing VehiclesController#index (for ::1 at 2010-02-27 11:52:34) [GET]
+Rendering template within layouts/application
+Rendering vehicles/index
+Completed in 148ms (View: 86, DB: 59) | 200 OK [http://localhost/carlog]

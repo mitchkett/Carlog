@@ -1,0 +1,21 @@
+<% section "vehicle #{@vehicle.make.name.underscore}" %>
+
+<% header do -%>
+  <h1><%= @vehicle.name %></h1>
+  
+  <div class="description">
+    <%= number_with_precision(@vehicle.estimated_mileage, :precision => 0, :delimiter => ',') %> miles (estimated)
+  </div>
+  
+  <ul id='subnavigation' class='clearfix'>
+    <!-- <li>Upcoming Maintenance</li> -->
+    <li class='history selected'>Maintenance History</li>
+  </ul>
+<% end -%>
+
+<%= link_to 'New Service Visit', new_vehicle_service_visit_path(@vehicle) %>
+<% @vehicle.service_visits.each do |sv| %>
+<div>
+  <%= link_to sv.visit_date, vehicle_service_visit_path(@vehicle, sv) %>
+</div>
+<% end %>

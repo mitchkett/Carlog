@@ -1,0 +1,69 @@
+/*
+** =layout 
+ */
+#container {
+  padding: 1em;
+}
+
+#content {
+  margin-bottom: 1em;  
+}
+
+/* 
+** =two_column
+ */
+body.two_column #sidebar {
+  width: 29%;
+}
+
+body.two_column #content {
+  width: 69.5%;
+}
+
+/* 
+** =left
+ */
+body.left #sidebar {
+  float: left;
+}
+
+body.left #content {
+  float: right;
+}
+
+/* 
+** =right
+ */
+body.right #sidebar {
+  float: right;
+}
+
+body.right #content {
+  float: left;
+}
+
+#content .header {
+
+}
+
+#content .header h2 {
+  margin: 0;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+#content .header .actions {
+  float: right;
+}
+
+#content .header .actions a {
+  margin: 0;
+}
+
+#content .content {
+  padding: 1em;
+}
+
+#footer {
+  clear: both;
+}

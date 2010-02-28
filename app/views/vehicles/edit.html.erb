@@ -1,0 +1,57 @@
+<% header do -%>
+  <h1>New Service Visit</h1>
+<% end -%>
+
+<% form_for @service_visit do |f| -%>
+  <%= f.error_messages %>
+  
+  <%= f.hidden_field :vehicle_id %>
+  
+  <div class='field'> 
+    <%= f.label :visit_date %>
+    <%= f.date_select :visit_date %>
+  </div
+  
+  <div class='field'> 
+    <%= f.label :mileage %>
+    <%= f.text_field :mileage %>
+  </div> 
+ 
+  <div class='field'> 
+    <%= f.label :service_provider_id %>
+    <%= f.collection_select :service_provider_id, ServiceProvider.all, :id, :name %>
+  </div> 
+ 
+  
+  <fieldset class="clearfix">
+    <legend>Jobs</legend> 
+    
+    <div class="duplicatables">
+      <% f.fields_for :jobs, :child_index => 1 do |j| -%>
+        <div class="duplicatable">
+          <div class="actions">
+            <%= j.hidden_field :_delete, :class => "delete" unless f.object.new_record? %>
+            <%= link_to_function "Remove", '', :class => "remove" %>
+          </div>
+          <div class="field category"> 
+            <%= j.label :maintenance_category_id, "Category" %>
+            <%= j.collection_select :maintenance_category_id, MaintenanceCategory.all, :id, :name %>
+          </div> 
+          <div class="field cost"> 
+            <%= j.label :cost %>
+            <%= j.text_field :cost %>
+          </div> 
+          <div class="field description"> 
+            <%= j.label :description %>
+            <%= j.text_area :description %>
+          </div> 
+        </div>
+      <% end -%>
+      <%= link_to_function "Add Job", '', :class => "add" %>
+    </div>
+  </fieldset>
+ 
+  <div class='field submit'>
+    <%= f.submit "Create" %>
+  </div>
+<% end -%>

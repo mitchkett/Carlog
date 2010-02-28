@@ -1,0 +1,48 @@
+<% section 'service_provider new' %>
+
+<% header do -%>
+<h1>New Service Provider</h1>
+<% end %>
+
+<% form_for(@service_provider) do |f| %>
+  <%= f.error_messages %>
+
+  <div>
+    <%= f.label :name %></div>
+  <div>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :address %></div>
+  <div>
+    <%= f.text_field :address %>
+  </div>
+  <div>
+    <%= f.label :city %></div>
+  <div>
+    <%= f.text_field :city %>
+  </div>
+  <div>
+    <%= f.label :state %></div>
+  <div>
+    <%= f.text_field :state %>
+  </div>
+  <div>
+    <%= f.label :postal_code %></div>
+  <div>
+    <%= f.text_field :postal_code %>
+  </div>
+  <div>
+    <%= f.label :phone %></div>
+  <div>
+    <%= f.text_field :phone %>
+  </div>
+  <div>
+    <%= f.label :website %></div>
+  <div>
+    <%= f.text_field :website %>
+  </div>
+  <div>
+    <%= f.submit 'Create' %>
+  </div>
+<% end %>

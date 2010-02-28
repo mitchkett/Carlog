@@ -1,0 +1,3 @@
+next service = next record in maintenance schedule > current mileage
+weeks to next service = (mileage target - current mileage) / weekly estimated mileage
+estimated total mileage = current mileage + ((today - last mileage update) * weekly estimated mileage)

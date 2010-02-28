@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Vehicles: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'defaults','screen', :cache => true %>
+  <%= javascript_include_tag :defaults, "labeled_input", "vehicle", "duplicatable" %>
+</head>
+<body class="<%= yield :section %>">
+  <div class="logo"></div>
+
+  <div class="app_header">
+    car log
+    <span class="sub-title">maintenance history and notification system</span>
+  </div>
+  <div id="container" class="clearfix">
+  <ul id="navigation">
+    <li class="summary"><%= link_to 'Summary', vehicles_path %></li>
+    <% unless current_user_vehicles.blank? %>
+      <% current_user_vehicles.each do |v| %>
+        <li class="<%= 'selected' if @vehicle == v %>"><%= link_to v.name, v %></li>
+      <% end %>
+    <% end %>
+    <li class="add"><%= link_to 'Add Vehicle', new_vehicle_path %></li>
+  </ul>
+
+  <div id="content">
+    <div class='header clearfix'><%= yield :header %></div>
+    <div class='section'><%= yield %></div>
+  </div>
+
+  </div>
+</body>
+</html>

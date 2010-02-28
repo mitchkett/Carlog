@@ -1,0 +1,271 @@
+@font-face {
+	font-family: 'DesyrelRegular';
+/*  src: url('../fonts/desyrel.eot');*/
+  src: local('Desyrel Regular'), local('Desyrel'), url('../fonts/desyrel.ttf') format('truetype');
+}
+
+body {
+	background-color: #036;
+	font-size: 12px;
+	font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+
+body .logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  -webkit-transform: rotate(-25deg);
+  opacity: 0.75;
+}
+
+body.toyota .logo {
+  background-image: url(../images/toyota.png);
+}
+
+body.nissan .logo {
+  background-image: url(../images/nissan.png);
+}
+
+body.saturn .logo {
+  background-image: url(../images/saturn.png);
+}
+
+body.ford .logo {
+  top:50px;
+  -webkit-transform: rotate(-15deg);
+  background-image: url(../images/ford.png);
+}
+
+body.chevrolet .logo {
+  top: 40px;
+  -webkit-transform: rotate(-15deg);
+  background-image: url(../images/chevrolet.png);
+}
+
+#container
+{
+	margin: 0 auto;
+	width: 97em;
+}
+
+.app_header{
+	margin-bottom: 1em;
+	background-color: #edf3fe;
+	line-height: 50px;
+	padding-left: 1em;
+	color: #036;
+	font-size: 2em;
+	font-weight: bold;
+	text-transform: uppercase;
+  -webkit-box-shadow: 0 5px 10px #000;
+  -moz-box-shadow: 0 5px 10px #000;
+}
+
+.app_header .sub-title{
+	line-height: 2em;
+	font-size: .5em;
+	margin-left: 1em;
+}
+
+#navigation
+{
+	width: 15em;
+	margin: 5em 0 0 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+
+#navigation li
+{
+	margin: 0 0 .5em 0;
+	padding: 0;
+}
+
+
+#navigation li a
+{
+	-moz-border-radius-topleft: 0.5em;
+	-moz-border-radius-bottomleft: 0.5em;
+	-webkit-border-top-left-radius: 0.5em;
+	-webkit-border-bottom-left-radius: 0.5em;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	background-image: url(../images/wheel.png);
+	background-position: .75em center;
+	background-repeat: no-repeat;
+	background-color: #1a4f85;
+	padding: 0.75em;
+	padding-left: 2.75em;
+  -webkit-box-shadow: -5px 5px 5px #000;
+  -moz-box-shadow: -5px 5px 5px #000;
+}
+
+#navigation li a:hover
+{
+	background-color: #1d64ad;
+}
+
+#navigation li.add a
+{
+	background-image: url(../images/create.png);
+}
+
+#navigation li.summary a
+{
+	background-image: url(../images/dashboard.png);
+}
+
+#navigation li.selected a,
+#navigation li.selected a:hover,
+body.summary #navigation li.summary a,
+body.summary #navigation li.summary a:hover,
+body.vehicles.new #navigation li.add a,
+body.vehicles.new #navigation li.add a:hover
+{
+  position: relative;
+	background-color: #fff;
+	color: #000;
+	z-index: 1000;
+}
+
+#content
+{
+	background-color: #fff;
+	width: 80em;
+	min-height: 50em;
+	float: left;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+  -webkit-box-shadow: -5px 5px 5px #000;
+  -moz-box-shadow: -5px 5px 5px #000;
+}
+
+#content .header
+{
+	-moz-border-radius-topleft: 0.5em;
+	-moz-border-radius-topright: 0.5em;
+	-webkit-border-top-left-radius: 0.5em;
+	-webkit-border-top-right-radius: 0.5em;
+	background-color: #edf3fe;
+	position: relative;
+	border-bottom: 1px solid #e9e9e9;
+}
+
+#content .header h1
+{
+	float: left;
+	margin: 0;
+	padding: .5em;
+	font-size: 2em;
+	color: #036;
+}
+
+#subnavigation
+{
+	float:right;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	bottom: -1px;
+	right: 1em;
+}
+
+#subnavigation li
+{
+	-moz-border-radius-topleft: 0.5em;
+	-moz-border-radius-topright: 0.5em;
+	-webkit-border-top-left-radius: 0.5em;
+	-webkit-border-top-right-radius: 0.5em;
+	margin: 0;
+	margin-right: .5em;
+	padding: .5em .5em .5em 2.75em;
+	float: left;
+  border: 1px solid transparent;
+	border-bottom: 1px solid #e9e9e9;
+	background-position: .75em center;
+	background-repeat: no-repeat;
+}
+
+#subnavigation li.selected
+{
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #e9e9e9;
+	border-bottom: 1px solid transparent;
+}
+
+#subnavigation li.history {
+	background-image: url(../images/history.png);
+}
+
+.section
+{
+  position: relative;
+  z-index: 1000;
+	padding: .75em;
+	background-color: #fff;
+}
+
+form .field
+{
+	margin-bottom: .75em;
+}
+
+form .field.submit
+{
+	
+}
+
+form .field.year, 
+form .field.make,
+form .field.model	
+{
+	float: left;
+	margin-right: .75em;
+}
+
+form .field.year select, 
+form .field.make select,
+form .field.model	select
+{
+	font-size: 2em;
+}
+
+form .field.current_mileage input,
+form .field.average_mileage input
+{
+	clear: both;
+	font-size: 2em;
+}
+
+form.service_visit .field.category,
+form.service_visit .field.cost,
+form.service_visit .field.description {
+  float: left;
+}
+
+form.service_visit .field.description textarea {
+  width: 200px;
+  height: 40px;
+}
+
+.duplicatables .duplicatable .actions {
+  float: left ;
+}
+
+input.blank, textarea.blank
+{
+	color: #999;
+}
+
+.header .description {
+	color: #999;
+	padding-top: 1.7em;
+}

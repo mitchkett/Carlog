@@ -1,0 +1,16 @@
+development:
+  adapter: mysql
+  database: carlog_dev
+  username: root
+  pool: 5
+  timeout: 5000
+
+test:
+  adapter: mysql
+  database: carlog_test
+  username: root
+  pool: 5
+  timeout: 5000
+
+production:
+    development

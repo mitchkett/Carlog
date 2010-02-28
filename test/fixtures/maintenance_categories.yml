@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+1:
+  name: Brakes
+  description: 'Brake rotors, pads, calipers, lines, etc'
+
+2:
+  name: Suspension
+  description: 'Struts, springs, ball joints, tie rods, etc'
+  
+3:
+  name: Engine Mechanical
+  description: 'Drive belts, drivetrain, etc'
+  
+4:
+  name: Engine Electrical
+  description: 'Alternator, battery, spark plugs, plug wires, etc'

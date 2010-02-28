@@ -1,0 +1,16 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+altima:
+  id: 1
+  vehicle_make_id: 1
+  name: Altima
+
+sentra:
+  id: 2
+  vehicle_make_id: 1
+  name: Sentra
+
+camry:
+  id: 3
+  vehicle_make_id: 2
+  name: Camry

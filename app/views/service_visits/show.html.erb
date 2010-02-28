@@ -1,0 +1,17 @@
+<% section "vehicle #{@vehicle.make.name.underscore}" %>
+
+<% header do -%>
+  <h1><%= @service_visit.visit_date.strftime("%B %d, %Y") %> - <%= @service_visit.service_provider.name %></h1>
+
+  <div class="description">
+    <%= number_with_precision(@service_visit.mileage, :precision => 0, :delimiter => ',') %> miles
+  </div>
+
+  <%= link_to "Edit", edit_vehicle_service_visit_path(@vehicle, @service_visit) %>
+<% end -%>
+
+<% @service_visit.service_jobs.each do |job| -%>
+  <div>
+    <%= job.maintenance_category.name %>, <%= number_to_currency job.cost %>, <%= job.description %>
+  </div>
+<% end -%>

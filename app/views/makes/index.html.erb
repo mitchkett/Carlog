@@ -1,0 +1,3 @@
+<% fields_for :vehicle do |f| -%>
+  <%= f.collection_select :make_id, @makes, :id, :name, :prompt => 'Make' %>
+<% end %>

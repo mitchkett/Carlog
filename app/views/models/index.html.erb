@@ -1,0 +1,3 @@
+<% fields_for :vehicle do |f| -%>
+  <%= f.collection_select :model_id, @models, :id, :name, :prompt => 'Model' %>
+<% end %>
