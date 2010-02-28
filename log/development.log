@@ -41148,3 +41148,425 @@ Rendering vehicles/show
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
   [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 544) [0m
 Completed in 48ms (View: 32, DB: 9) | 200 OK [http://localhost/vehicles/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VehiclesController#index (for 127.0.0.1 at 2010-02-27 23:48:02) [GET]
+  [4;35;1mVehicle Load (0.4ms)[0m   [0mSELECT * FROM `vehicles` [0m
+Rendering template within layouts/application
+Rendering vehicles/index
+  [4;36;1mVehicle Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `vehicles`[0m
+  [4;35;1mVehicleMake Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `vehicle_makes`[0m
+  [4;36;1mVehicleMake Load (0.3ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;35;1mVehicleModel Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `vehicle_models`[0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 533) [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 40) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 645) [0m
+  [4;35;1mVehicleMake Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 46) [0m
+  [4;36;1mVehicleModel Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 702) [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 13) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 244) [0m
+  [4;35;1mVehicleMake Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 7) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 109) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 544) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicles` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicles` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 533) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 40) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 645) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 46) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 702) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 13) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 244) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 109) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 544) [0m
+Completed in 126ms (View: 83, DB: 6) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VehiclesController#show (for 127.0.0.1 at 2010-02-27 23:48:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVehicle Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `vehicles`[0m
+  [4;35;1mVehicle Load (0.6ms)[0m   [0mSELECT * FROM `vehicles` WHERE (`vehicles`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering vehicles/show
+  [4;36;1mVehicleMake Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `vehicle_makes`[0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mVehicleModel Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `vehicle_models`[0m
+  [4;35;1mVehicleModel Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 533) [0m
+  [4;36;1mServiceVisit Load (0.4ms)[0m   [0;1mSELECT * FROM `service_visits` WHERE (`service_visits`.vehicle_id = 1) [0m
+  [4;35;1mServiceVisit Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `service_visits`[0m
+  [4;36;1mVehicle Load (0.3ms)[0m   [0;1mSELECT * FROM `vehicles` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicles` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 533) [0m
+  [4;36;1mVehicleMake Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 40) [0m
+  [4;35;1mVehicleModel Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 645) [0m
+  [4;36;1mVehicleMake Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 46) [0m
+  [4;35;1mVehicleModel Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 702) [0m
+  [4;36;1mVehicleMake Load (0.7ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 13) [0m
+  [4;35;1mVehicleModel Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 244) [0m
+  [4;36;1mVehicleMake Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 7) [0m
+  [4;35;1mVehicleModel Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 109) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;35;1mVehicleModel Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 544) [0m
+Completed in 151ms (View: 135, DB: 9) | 200 OK [http://localhost/vehicles/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VehiclesController#show (for 127.0.0.1 at 2010-02-27 23:48:08) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mVehicle Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `vehicles`[0m
+  [4;36;1mVehicle Load (0.3ms)[0m   [0;1mSELECT * FROM `vehicles` WHERE (`vehicles`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering vehicles/show
+  [4;35;1mVehicleMake Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `vehicle_makes`[0m
+  [4;36;1mVehicleMake Load (0.5ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 40) [0m
+  [4;35;1mVehicleModel Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `vehicle_models`[0m
+  [4;36;1mVehicleModel Load (0.9ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 645) [0m
+  [4;35;1mServiceVisit Load (0.3ms)[0m   [0mSELECT * FROM `service_visits` WHERE (`service_visits`.vehicle_id = 2) [0m
+  [4;36;1mVehicle Load (0.3ms)[0m   [0;1mSELECT * FROM `vehicles` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicles` [0m
+  [4;36;1mVehicleMake Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;35;1mVehicleModel Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 533) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 40) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 645) [0m
+  [4;36;1mVehicleMake Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 46) [0m
+  [4;35;1mVehicleModel Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 702) [0m
+  [4;36;1mVehicleMake Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 13) [0m
+  [4;35;1mVehicleModel Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 244) [0m
+  [4;36;1mVehicleMake Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 7) [0m
+  [4;35;1mVehicleModel Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 109) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;35;1mVehicleModel Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 544) [0m
+Completed in 106ms (View: 91, DB: 8) | 200 OK [http://localhost/vehicles/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VehiclesController#show (for 127.0.0.1 at 2010-02-27 23:48:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mVehicle Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `vehicles`[0m
+  [4;36;1mVehicle Load (0.5ms)[0m   [0;1mSELECT * FROM `vehicles` WHERE (`vehicles`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering vehicles/show
+  [4;35;1mVehicleMake Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `vehicle_makes`[0m
+  [4;36;1mVehicleMake Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 46) [0m
+  [4;35;1mVehicleModel Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `vehicle_models`[0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 702) [0m
+  [4;35;1mServiceVisit Load (0.9ms)[0m   [0mSELECT * FROM `service_visits` WHERE (`service_visits`.vehicle_id = 3) [0m
+  [4;36;1mServiceVisit Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `service_visits`[0m
+  [4;35;1mVehicle Load (0.3ms)[0m   [0mSELECT * FROM `vehicles` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicles` [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 533) [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 40) [0m
+  [4;36;1mVehicleModel Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 645) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 46) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 702) [0m
+  [4;35;1mVehicleMake Load (0.9ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 13) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 244) [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 7) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 109) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 544) [0m
+Completed in 49ms (View: 33, DB: 10) | 200 OK [http://localhost/vehicles/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VehiclesController#show (for 127.0.0.1 at 2010-02-27 23:48:15) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mVehicle Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `vehicles`[0m
+  [4;35;1mVehicle Load (0.3ms)[0m   [0mSELECT * FROM `vehicles` WHERE (`vehicles`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering vehicles/show
+  [4;36;1mVehicleMake Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `vehicle_makes`[0m
+  [4;35;1mVehicleMake Load (0.6ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 13) [0m
+  [4;36;1mVehicleModel Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `vehicle_models`[0m
+  [4;35;1mVehicleModel Load (1.6ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 244) [0m
+  [4;36;1mServiceVisit Load (0.3ms)[0m   [0;1mSELECT * FROM `service_visits` WHERE (`service_visits`.vehicle_id = 4) [0m
+  [4;35;1mVehicle Load (0.3ms)[0m   [0mSELECT * FROM `vehicles` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicles` [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mVehicleModel Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 533) [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 40) [0m
+  [4;36;1mVehicleModel Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 645) [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 46) [0m
+  [4;36;1mVehicleModel Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 702) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 13) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 244) [0m
+  [4;35;1mVehicleMake Load (0.3ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 7) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 109) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 544) [0m
+Completed in 108ms (View: 94, DB: 8) | 200 OK [http://localhost/vehicles/4]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VehiclesController#show (for 127.0.0.1 at 2010-02-27 23:48:17) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mVehicle Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `vehicles`[0m
+  [4;35;1mVehicle Load (0.3ms)[0m   [0mSELECT * FROM `vehicles` WHERE (`vehicles`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering vehicles/show
+  [4;36;1mVehicleMake Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `vehicle_makes`[0m
+  [4;35;1mVehicleMake Load (0.3ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 7) [0m
+  [4;36;1mVehicleModel Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `vehicle_models`[0m
+  [4;35;1mVehicleModel Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 109) [0m
+  [4;36;1mServiceVisit Load (0.3ms)[0m   [0;1mSELECT * FROM `service_visits` WHERE (`service_visits`.vehicle_id = 5) [0m
+  [4;35;1mVehicle Load (0.7ms)[0m   [0mSELECT * FROM `vehicles` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicles` [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mVehicleModel Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 533) [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 40) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 645) [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 46) [0m
+  [4;36;1mVehicleModel Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 702) [0m
+  [4;35;1mVehicleMake Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 13) [0m
+  [4;36;1mVehicleModel Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 244) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 109) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 544) [0m
+Completed in 43ms (View: 29, DB: 7) | 200 OK [http://localhost/vehicles/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VehiclesController#show (for 127.0.0.1 at 2010-02-27 23:48:20) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mVehicle Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `vehicles`[0m
+  [4;35;1mVehicle Load (0.8ms)[0m   [0mSELECT * FROM `vehicles` WHERE (`vehicles`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering vehicles/show
+  [4;36;1mVehicleMake Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `vehicle_makes`[0m
+  [4;35;1mVehicleMake Load (0.5ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mVehicleModel Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `vehicle_models`[0m
+  [4;35;1mVehicleModel Load (0.6ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 544) [0m
+  [4;36;1mServiceVisit Load (0.3ms)[0m   [0;1mSELECT * FROM `service_visits` WHERE (`service_visits`.vehicle_id = 6) [0m
+  [4;35;1mVehicle Load (0.2ms)[0m   [0mSELECT * FROM `vehicles` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicles` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mVehicleModel Load (0.3ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 533) [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 40) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 645) [0m
+  [4;35;1mVehicleMake Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 46) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 702) [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 13) [0m
+  [4;36;1mVehicleModel Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 244) [0m
+  [4;35;1mVehicleMake Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 7) [0m
+  [4;36;1mVehicleModel Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 109) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 544) [0m
+Completed in 107ms (View: 92, DB: 8) | 200 OK [http://localhost/vehicles/6]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VehiclesController#show (for 127.0.0.1 at 2010-02-27 23:48:29) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mVehicle Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `vehicles`[0m
+  [4;35;1mVehicle Load (0.8ms)[0m   [0mSELECT * FROM `vehicles` WHERE (`vehicles`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering vehicles/show
+  [4;36;1mVehicleMake Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `vehicle_makes`[0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 7) [0m
+  [4;36;1mVehicleModel Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `vehicle_models`[0m
+  [4;35;1mVehicleModel Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 109) [0m
+  [4;36;1mServiceVisit Load (0.3ms)[0m   [0;1mSELECT * FROM `service_visits` WHERE (`service_visits`.vehicle_id = 5) [0m
+  [4;35;1mVehicle Load (0.6ms)[0m   [0mSELECT * FROM `vehicles` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicles` [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 533) [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 40) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 645) [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 46) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 702) [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 13) [0m
+  [4;36;1mVehicleModel Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 244) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 109) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 544) [0m
+Completed in 43ms (View: 29, DB: 8) | 200 OK [http://localhost/vehicles/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VehiclesController#show (for 127.0.0.1 at 2010-02-27 23:48:31) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mVehicle Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `vehicles`[0m
+  [4;35;1mVehicle Load (0.3ms)[0m   [0mSELECT * FROM `vehicles` WHERE (`vehicles`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering vehicles/show
+  [4;36;1mVehicleMake Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `vehicle_makes`[0m
+  [4;35;1mVehicleMake Load (0.4ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 13) [0m
+  [4;36;1mVehicleModel Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `vehicle_models`[0m
+  [4;35;1mVehicleModel Load (0.7ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 244) [0m
+  [4;36;1mServiceVisit Load (0.3ms)[0m   [0;1mSELECT * FROM `service_visits` WHERE (`service_visits`.vehicle_id = 4) [0m
+  [4;35;1mVehicle Load (0.3ms)[0m   [0mSELECT * FROM `vehicles` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicles` [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mVehicleModel Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 533) [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 40) [0m
+  [4;36;1mVehicleModel Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 645) [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 46) [0m
+  [4;36;1mVehicleModel Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 702) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 13) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 244) [0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 7) [0m
+  [4;36;1mVehicleModel Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 109) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mVehicleModel Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 544) [0m
+Completed in 107ms (View: 93, DB: 7) | 200 OK [http://localhost/vehicles/4]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VehiclesController#show (for 127.0.0.1 at 2010-02-27 23:48:38) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mVehicle Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `vehicles`[0m
+  [4;35;1mVehicle Load (0.7ms)[0m   [0mSELECT * FROM `vehicles` WHERE (`vehicles`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering vehicles/show
+  [4;36;1mVehicleMake Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `vehicle_makes`[0m
+  [4;35;1mVehicleMake Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 46) [0m
+  [4;36;1mVehicleModel Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `vehicle_models`[0m
+  [4;35;1mVehicleModel Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 702) [0m
+  [4;36;1mServiceVisit Load (0.4ms)[0m   [0;1mSELECT * FROM `service_visits` WHERE (`service_visits`.vehicle_id = 3) [0m
+  [4;35;1mServiceVisit Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `service_visits`[0m
+  [4;36;1mVehicle Load (0.3ms)[0m   [0;1mSELECT * FROM `vehicles` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicles` [0m
+  [4;36;1mVehicleMake Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;35;1mVehicleModel Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 533) [0m
+  [4;36;1mVehicleMake Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 40) [0m
+  [4;35;1mVehicleModel Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 645) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 46) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 702) [0m
+  [4;36;1mVehicleMake Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 13) [0m
+  [4;35;1mVehicleModel Load (1.3ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 244) [0m
+  [4;36;1mVehicleMake Load (0.3ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 7) [0m
+  [4;35;1mVehicleModel Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 109) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;35;1mVehicleModel Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 544) [0m
+Completed in 50ms (View: 32, DB: 10) | 200 OK [http://localhost/vehicles/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing VehiclesController#show (for 127.0.0.1 at 2010-02-27 23:48:44) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mVehicle Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `vehicles`[0m
+  [4;36;1mVehicle Load (0.5ms)[0m   [0;1mSELECT * FROM `vehicles` WHERE (`vehicles`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering vehicles/show
+  [4;35;1mVehicleMake Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `vehicle_makes`[0m
+  [4;36;1mVehicleMake Load (0.3ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;35;1mVehicleModel Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `vehicle_models`[0m
+  [4;36;1mVehicleModel Load (0.7ms)[0m   [0;1mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 544) [0m
+  [4;35;1mServiceVisit Load (0.3ms)[0m   [0mSELECT * FROM `service_visits` WHERE (`service_visits`.vehicle_id = 6) [0m
+  [4;36;1mVehicle Load (0.3ms)[0m   [0;1mSELECT * FROM `vehicles` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicles` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;35;1mVehicleModel Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 533) [0m
+  [4;36;1mVehicleMake Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 40) [0m
+  [4;35;1mVehicleModel Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 645) [0m
+  [4;36;1mVehicleMake Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 46) [0m
+  [4;35;1mVehicleModel Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 702) [0m
+  [4;36;1mVehicleMake Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 13) [0m
+  [4;35;1mVehicleModel Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 244) [0m
+  [4;36;1mVehicleMake Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 7) [0m
+  [4;35;1mVehicleModel Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 109) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 544) [0m
+Completed in 108ms (View: 94, DB: 8) | 200 OK [http://localhost/vehicles/6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServiceVisitsController#new (for 127.0.0.1 at 2010-02-27 23:48:45) [GET]
+  Parameters: {"vehicle_id"=>"6"}
+  [4;35;1mVehicle Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `vehicles`[0m
+  [4;36;1mVehicle Load (0.6ms)[0m   [0;1mSELECT * FROM `vehicles` WHERE (`vehicles`.`id` = 6) [0m
+  [4;35;1mServiceVisit Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `service_visits`[0m
+  [4;36;1mServiceJob Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `service_jobs`[0m
+Rendering template within layouts/application
+Rendering service_visits/new
+  [4;35;1mVehicleMake Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `vehicle_makes`[0m
+  [4;36;1mVehicleMake Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;35;1mServiceProvider Load (0.3ms)[0m   [0mSELECT * FROM `service_providers` [0m
+  [4;36;1mServiceProvider Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `service_providers`[0m
+  [4;35;1mMaintenanceCategory Load (0.3ms)[0m   [0mSELECT * FROM `maintenance_categories` [0m
+  [4;36;1mMaintenanceCategory Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `maintenance_categories`[0m
+Rendered service_visits/_form (50.7ms)
+  [4;35;1mVehicle Load (0.4ms)[0m   [0mSELECT * FROM `vehicles` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicles` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mVehicleModel Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `vehicle_models`[0m
+  [4;35;1mVehicleModel Load (0.8ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 533) [0m
+  [4;36;1mVehicleMake Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 40) [0m
+  [4;35;1mVehicleModel Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 645) [0m
+  [4;36;1mVehicleMake Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 46) [0m
+  [4;35;1mVehicleModel Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 702) [0m
+  [4;36;1mVehicleMake Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 13) [0m
+  [4;35;1mVehicleModel Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 244) [0m
+  [4;36;1mVehicleMake Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 7) [0m
+  [4;35;1mVehicleModel Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 109) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;35;1mVehicleModel Load (0.3ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 544) [0m
+Completed in 144ms (View: 77, DB: 12) | 200 OK [http://localhost/vehicles/6/service_visits/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServiceVisitsController#new (for 127.0.0.1 at 2010-02-27 23:48:55) [GET]
+  Parameters: {"vehicle_id"=>"6"}
+  [4;35;1mVehicle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `vehicles`[0m
+  [4;36;1mVehicle Load (0.6ms)[0m   [0;1mSELECT * FROM `vehicles` WHERE (`vehicles`.`id` = 6) [0m
+  [4;35;1mServiceVisit Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `service_visits`[0m
+  [4;36;1mServiceJob Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `service_jobs`[0m
+Rendering template within layouts/application
+Rendering service_visits/new
+  [4;35;1mVehicleMake Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `vehicle_makes`[0m
+  [4;36;1mVehicleMake Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;35;1mServiceProvider Load (0.3ms)[0m   [0mSELECT * FROM `service_providers` [0m
+  [4;36;1mServiceProvider Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `service_providers`[0m
+  [4;35;1mMaintenanceCategory Load (0.3ms)[0m   [0mSELECT * FROM `maintenance_categories` [0m
+  [4;36;1mMaintenanceCategory Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `maintenance_categories`[0m
+Rendered service_visits/_form (20.9ms)
+  [4;35;1mVehicle Load (0.4ms)[0m   [0mSELECT * FROM `vehicles` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicles` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;36;1mVehicleModel Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `vehicle_models`[0m
+  [4;35;1mVehicleModel Load (0.5ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 533) [0m
+  [4;36;1mVehicleMake Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 40) [0m
+  [4;35;1mVehicleModel Load (0.1ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 645) [0m
+  [4;36;1mVehicleMake Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 46) [0m
+  [4;35;1mVehicleModel Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 702) [0m
+  [4;36;1mVehicleMake Load (0.1ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 13) [0m
+  [4;35;1mVehicleModel Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 244) [0m
+  [4;36;1mVehicleMake Load (0.2ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 7) [0m
+  [4;35;1mVehicleModel Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 109) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `vehicle_makes` WHERE (`vehicle_makes`.`id` = 33) [0m
+  [4;35;1mVehicleModel Load (0.2ms)[0m   [0mSELECT * FROM `vehicle_models` WHERE (`vehicle_models`.`id` = 544) [0m
+Completed in 72ms (View: 43, DB: 13) | 200 OK [http://localhost/vehicles/6/service_visits/new]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ServiceVisitsController#create (for 127.0.0.1 at 2010-02-27 23:49:04) [POST]
+  Parameters: {"commit"=>"Create", "service_visit"=>{"service_provider_id"=>"1", "mileage"=>"44000", "visit_date(1i)"=>"2010", "visit_date(2i)"=>"2", "visit_date(3i)"=>"28", "service_jobs_attributes"=>{"0"=>{"cost"=>"20", "description"=>"", "maintenance_category_id"=>"1"}}, "vehicle_id"=>"6"}, "authenticity_token"=>"hOx9anP/AVj1nW93+1qX/+6p6sZ/Yu3ANzAO65tiFhE=", "vehicle_id"=>"6"}
+  [4;35;1mVehicle Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `vehicles`[0m
+  [4;36;1mVehicle Load (0.6ms)[0m   [0;1mSELECT * FROM `vehicles` WHERE (`vehicles`.`id` = 6) [0m
+  [4;35;1mServiceVisit Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `service_visits`[0m
+  [4;36;1mServiceJob Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `service_jobs`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mServiceVisit Create (0.2ms)[0m   [0;1mINSERT INTO `service_visits` (`service_provider_id`, `created_at`, `mileage`, `visit_date`, `updated_at`, `vehicle_id`, `description`) VALUES(1, '2010-02-28 04:49:04', 44000, '2010-02-28', '2010-02-28 04:49:04', 6, NULL)[0m
+  [4;35;1mServiceJob Create (0.1ms)[0m   [0mINSERT INTO `service_jobs` (`created_at`, `service_job_type`, `service_visit_id`, `updated_at`, `cost_in_cents`, `description`, `maintenance_category_id`) VALUES('2010-02-28 04:49:04', NULL, 8, '2010-02-28 04:49:04', 2000, '', 1)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mVehicle Load (0.2ms)[0m   [0mSELECT * FROM `vehicles` WHERE (`vehicles`.`id` = 6) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.to_date):
+  app/models/service_visit.rb:11:in `update_vehicle_mileage'
+  app/controllers/service_visits_controller.rb:51:in `create'
+  app/controllers/service_visits_controller.rb:49:in `create'
+
+Rendered rescues/_trace (35.9ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
