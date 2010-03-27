@@ -1,0 +1,33 @@
+* Add My Vehicles
+* Edit My Vehicles
+* View Upcoming Maintenance Tasks
+** The system needs to know this, so it can display it to users - we need to find a source for this info !!!
+*** http://www.edmunds.com/maintenance/detail.html?styleId=100001837&engCode=4INAG2.2&transCode=AUTOMATIC&mileage=7500&zip=49508&type=&serviceType=
+** Mark these tasks as complete - maybe attached scans of documents/receipts, with a date of service, mileage, etc
+** View maintentance history, printable report
+** mark tasks as "no thanks"
+** set their schedule for some things
+* Alets (email, sms, etc) for upcoming maintentance
+* Mileage tracking
+** User can input their exact milage
+** User can say their avg milage, then we can guestiamte
+** We can guestimate based on the history if they don't give us avg
+
+Inregration with Dealership/Mechanics
+* Making appointments for maintenance in the app
+** Dealership/Mechanics can see a list of requested maintenance in the app
+* Getting complete task info from dealships
+** automated nightly batch
+** service rep can do this through the site
+* Supply their reccomended maintenance schedules
+
+* Recalls - http://www.safercar.gov/
+* car value from kbb
+
+http://www.nhtsa.dot.gov/portal/site/nhtsa/menuitem.bead436724af02e770f6df1020008a0c/
+
+http://smg.toyotapartsandservice.com/guides.php?v=3&y=2001&int_id=41
+
+http://www.nissanusa.com/owning/vehicle-care/maintenance.html
+
+http://www.kbb.com/kbb/UsedCars/MakeModelReference.aspx
