@@ -4,6 +4,9 @@ class Vehicle < ActiveRecord::Base
   belongs_to :model, :class_name => "VehicleModel"
   belongs_to :user
   
+  validates_presence_of :current_mileage, :message => "can't be blank"
+  validates_presence_of :average_mileage, :message => "can't be blank"
+  
   YEARS = (1989..Date.today.year + 1)
   
   def name

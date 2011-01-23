@@ -2,7 +2,7 @@ class VehiclesController < ApplicationController
   # GET /vehicles
   # GET /vehicles.xml
   def index
-    @vehicles = Vehicle.all
+    @vehicles = Vehicle.all(:order => 'year desc, make_id, model_id')
 
     respond_to do |format|
       format.html # index.html.erb
@@ -41,7 +41,7 @@ class VehiclesController < ApplicationController
   # POST /vehicles.xml
   def create
     @vehicle = Vehicle.new(params[:vehicle])
-
+    @vehicle.mileage_last_changed_at = DateTime.now
     respond_to do |format|
       if @vehicle.save
         flash[:notice] = 'Vehicle was successfully created.'

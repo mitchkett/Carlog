@@ -87,17 +87,17 @@ ActiveRecord::Schema.define(:version => 20100227211138) do
 
   create_table "vehicles", :force => true do |t|
     t.integer  "year"
-    t.integer  "make_id"
-    t.integer  "model_id"
     t.string   "trim"
-    t.integer  "current_mileage"
-    t.integer  "average_mileage"
     t.string   "exterior_color"
     t.string   "interior_color"
-    t.string   "vin"
-    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "vin"
+    t.integer  "make_id"
+    t.integer  "model_id"
+    t.integer  "current_mileage"
+    t.integer  "average_mileage"
+    t.integer  "user_id"
     t.datetime "mileage_last_changed_at"
   end
 

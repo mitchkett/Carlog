@@ -50,7 +50,7 @@ class ServiceVisitsController < ApplicationController
       if @service_visit.save
         @service_visit.update_vehicle_mileage
         flash[:notice] = 'ServiceVisit was successfully created.'
-        format.html { redirect_to(@service_visit) }
+        format.html { redirect_to(vehicle_service_visit_path(@service_visit.vehicle, @service_visit)) }
         format.xml  { render :xml => @service_visit, :status => :created, :location => @service_visit }
       else
         format.html { render :action => "new" }
@@ -66,8 +66,9 @@ class ServiceVisitsController < ApplicationController
 
     respond_to do |format|
       if @service_visit.update_attributes(params[:service_visit])
+        @service_visit.update_vehicle_mileage
         flash[:notice] = 'ServiceVisit was successfully updated.'
-        format.html { redirect_to(@service_visit) }
+        format.html { redirect_to(@vehicle, @service_visit) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

@@ -21,7 +21,7 @@
     <%= f.text_field :average_mileage %>
   </div>
   <div class='field submit'>
-    <%= f.submit button_label %>
+    <%= f.submit f.object.new_record? ? "Create" : "Update" %>
   </div>
   
 <% end %>

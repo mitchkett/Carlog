@@ -12,10 +12,41 @@
     <li class='history selected'>Maintenance History</li>
   </ul>
 <% end -%>
-
-<%= link_to 'New Service Visit', new_vehicle_service_visit_path(@vehicle) %>
-<% @vehicle.service_visits.each do |sv| %>
-<div>
-  <%= link_to sv.visit_date, vehicle_service_visit_path(@vehicle, sv) %>
+<div class='button-pane'>
+  <%= link_to 'New Service Visit', new_vehicle_service_visit_path(@vehicle), :class => 'link-button' %>
 </div>
-<% end %>
+<div class='visit-list clearfix'>
+  <div class='date'>
+    Date
+  </div>
+  <div class='provider'>
+    Service Provider
+  </div>
+  <div class='mileage'>
+    Mileage
+  </div>
+  <div class='total_cost'>
+    Cost
+  </div>
+</div>
+<% if @vehicle.service_visits.blank? -%>
+<div class='empty-list'>
+  No Service Visits Recorded
+</div>
+<% end -%>
+<% @vehicle.service_visits.all(:order => 'visit_date desc').each do |sv| -%>
+<div class='visit-list clearfix'>
+  <div class='date'>
+    <%= link_to sv.visit_date, vehicle_service_visit_path(@vehicle, sv) %>
+  </div>
+  <div class='provider'>
+    <%= sv.service_provider.name%>
+  </div>
+  <div class='mileage'>
+    <%= number_with_precision(sv.mileage, :precision => 0, :delimiter => ',') %>
+  </div>
+  <div class='total_cost'>
+    <%= number_to_currency sv.total_cost %>
+  </div>
+</div>
+<% end -%>

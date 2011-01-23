@@ -9,8 +9,8 @@ module ApplicationHelper
     content_for :header, &block
   end
   
-def current_user_vehicles
-  Vehicle.all
-end
+  def current_user_vehicles
+    Vehicle.all(:order => 'year desc, make_id, model_id')
+  end
 
 end

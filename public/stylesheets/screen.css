@@ -34,6 +34,60 @@ body.saturn .logo {
   background-image: url(../images/saturn.png);
 }
 
+body.volkswagen .logo {
+  background-image: url(../images/volkswagen.png);
+}
+
+body.pontiac .logo {
+  background-image: url(../images/pontiac.png);
+}
+
+body.mazda .logo {
+  background-image: url(../images/mazda.png);
+}
+
+body.bmw .logo {
+  background-image: url(../images/bmw.png);
+}
+
+body.dodge .logo {
+  background-image: url(../images/dodge.png);
+}
+
+body.volvo .logo {
+  background-image: url(../images/volvo.png);
+}
+
+body.infiniti .logo {
+	top: 40px;
+  -webkit-transform: rotate(-15deg);
+  background-image: url(../images/infiniti.png);
+}
+
+body.gmc .logo {
+	top: 70px;
+	left: 30px;
+  -webkit-transform: rotate(-15deg);
+  background-image: url(../images/gmc.png);
+}
+
+body.subaru .logo {
+  top:50px;
+  -webkit-transform: rotate(-15deg);
+  background-image: url(../images/subaru.png);
+}
+
+body.audi .logo {
+	top: 50px;
+  -webkit-transform: rotate(-15deg);
+  background-image: url(../images/audi.png);
+}
+
+body.honda .logo {
+	top: 10px;
+  background-image: url(../images/honda.png);
+}
+
 body.ford .logo {
   top:50px;
   -webkit-transform: rotate(-15deg);
@@ -268,4 +322,56 @@ input.blank, textarea.blank
 .header .description {
 	color: #999;
 	padding-top: 1.7em;
+}
+
+.visit-list{
+	border-bottom: 1px solid #999;
+}
+
+.visit-list .date, .visit-list .provider, .visit-list .mileage, .visit-list .total_cost 
+{
+	float: left;
+	text-align: left;
+}
+
+.visit-list .date, .visit-list .mileage, .visit-list .total_cost
+{
+	width: 20%;
+}
+
+.visit-list .provider
+{
+	width: 40%;
+}
+
+.visit-list .total_cost
+{
+	text-align: right;
+}
+
+.button-pane a{
+	padding: .5em;
+	background-color: #1a4f85;
+	color: #fff;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+  -webkit-box-shadow: -2px 2px 2px #000;
+  -moz-box-shadow: -2px 2px 2px #000;
+}
+
+.button-pane a:hover
+{
+	text-decoration: none;
+	background-color: #1d64ad;
+}
+
+.button-pane
+{
+	margin-bottom: 2em;
+}
+
+.dashboard-item
+{
+	padding: 1em 0em;
+	border-bottom: 1px solid #000;
 }
